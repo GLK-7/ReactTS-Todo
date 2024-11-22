@@ -10,9 +10,10 @@ import { ITask } from '../interfaces/Task';
 interface Props {
   btnText: string;
   taskList: ITask[];
-  setTaskList?: React.Dispatch<React.SetStateAction<ITask>>;
+  setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
   task?: ITask | null;
 }
+
 
 const TaskForm = ({ btnText, taskList, setTaskList, task }: Props) => {
   const [id, setId] = useState<number>(0);
