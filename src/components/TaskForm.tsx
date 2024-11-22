@@ -19,6 +19,8 @@ const TaskForm = ({ btnText, taskList, setTaskList, task }: Props) => {
   const [id, setId] = useState<number>(0);
   const [title, setTitle] = useState<string>('');
   const [difficulty, setDifficulty] = useState<number>(0);
+  
+  console.log(id)
 
   useEffect(() => {
     if (task) {
